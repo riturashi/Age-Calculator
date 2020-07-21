@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/drop_down"
+            android:textSize="20sp"
+            android:text="01/01/2019"
+            android:id="@+id/bt_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/drop_down"></Button>
+
+        <TextView
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="To"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></TextView>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/drop_down"
+            android:textSize="20sp"
+            android:id="@+id/bt_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/drop_down"></Button>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="Calculate"
+        android:id="@+id/bt_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp"
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="0 Years | 0 Months | 0 Days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
